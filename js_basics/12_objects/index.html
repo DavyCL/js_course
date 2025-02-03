@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Objects</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1 id="title"></h1>
+        <script>
+       
+            var phone = new Object();
+            phone["brand"] = "Samsung";
+            phone["model"] = "Galaxy S8";
+            phone["color"] = "silver";
+
+            console.log(phone);
+            console.log(phone.brand);
+            console.log(phone.model);
+            console.log(phone.color);
+         
+
+            var phoneNew = new Object();
+            phoneNew.brand = "Apple";
+            phoneNew.model = "iPhone 7";
+            phoneNew.color = "black";
+
+            console.log(phoneNew);
+
+            var anotherPhone = {
+                brand: "Huawei",
+                model: "P10",
+                color: "blue",
+                features: {
+                    ram: "4GB",
+                    storage: "64GB",
+                    wifi : true
+                }
+            };
+
+            console.log(anotherPhone);
+        </script>
+    </body>
+</html>
